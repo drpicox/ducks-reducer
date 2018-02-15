@@ -1,7 +1,7 @@
 ducksReducer
 ============
 
-Combines reducers from ducks modules into a single reducer.
+Combines reducers from redux-ducks modules into a single reducer.
 
 It uses reducers defined as ducks, see
 [ducks-modular-redux](https://github.com/erikras/ducks-modular-redux)
@@ -105,7 +105,7 @@ const middleware = ducksMiddleware(ducks)
 const store = createStore(
   reducer, 
   preloadedState, 
-  applyMiddleware(ducksMiddleware)
+  applyMiddleware(middleware)
 )
 
 // ...do your stuff...
