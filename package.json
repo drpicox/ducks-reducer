@@ -1,0 +1,49 @@
+{
+  "name": "ducks-reducer",
+  "version": "1.0.0",
+  "description": "function that creates a reducer function from many ducks",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drpicox/ducks-reducer.git"
+  },
+  "keywords": [
+    "redux",
+    "reducer",
+    "createStore",
+    "ducks-modular-redux",
+    "modules",
+    "combineReducers"
+  ],
+  "author": "David Rodenas <david.rodenas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drpicox/ducks-reducer/issues"
+  },
+  "homepage": "https://github.com/drpicox/ducks-reducer#readme",
+  "devDependencies": {
+    "eslint-plugin-prettier": "^2.5.0",
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "redux": "^3.7.2"
+  },
+  "peerDependencies": {
+    "redux": "1.x || 2.x || 3.x || 4.x"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true
+  }
+}
