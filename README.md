@@ -1,4 +1,4 @@
-ducksReducer
+ducksReducer ![building status](https://api.travis-ci.org/drpicox/ducks-reducer.svg?branch=master)
 ============
 
 Combines reducers from redux-ducks modules into a single reducer.
