@@ -12,7 +12,10 @@ function ducksReducer(ducks) {
     }
   })
 
-  return combineReducers(reducers)
+  if (Object.keys(reducers).length > 0) {
+    return combineReducers(reducers)
+  }
+  return (state = {}) => state
 }
 
 module.exports = ducksReducer
