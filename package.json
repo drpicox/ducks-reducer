@@ -1,6 +1,6 @@
 {
   "name": "ducks-reducer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "function that creates a reducer function from many ducks",
   "main": "index.js",
   "scripts": {
