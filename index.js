@@ -5,8 +5,8 @@ function ducksReducer(ducks) {
 
   Object.keys(ducks).forEach(function(key) {
     var duck = ducks[key]
-    if (typeof duck.default === 'function') {
-      reducers[key] = duck.default
+    if (typeof duck['default'] === 'function') {
+      reducers[key] = duck['default']
     } else if (typeof duck === 'function') {
       reducers[key] = duck
     }
@@ -15,7 +15,9 @@ function ducksReducer(ducks) {
   if (Object.keys(reducers).length > 0) {
     return combineReducers(reducers)
   }
-  return (state = {}) => state
+  return function(state) { 
+    return typeof state === 'undefined' ? {} : state
+  }
 }
 
 module.exports = ducksReducer
